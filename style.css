@@ -20,7 +20,6 @@ header {
   color: #0A3871;
   font-size: 80px;
   font-weight: bold;
-
 }
 
 main {
@@ -94,7 +93,6 @@ button {
   margin-bottom: 10px;
   padding: 1px;
   color: #495057;
-
 }
 
 .output-box {
@@ -131,11 +129,71 @@ button {
 
 .copy {
   width: 150px; /* Reduce el tamaño del botón de copiar */
-  padding: 16px; 
-  background-color: white; 
-  color: #0A3871; 
-  border: 2px solid #0A3871; 
-  border-radius: 24px; 
+  padding: 16px;
+  background-color: white;
+  color: #0A3871;
+  border: 2px solid #0A3871;
+  border-radius: 24px;
   font-size: 14px; /* Reduce el tamaño de la fuente */
   margin-top: 200px; /* Ajusta el margen superior */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  header {
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    font-size: 40px;
+  }
+
+  main {
+    grid-template-columns: 1fr; /* Cambia a una columna */
+    gap: 20px; /* Reduce el espacio entre secciones */
+  }
+
+  textarea {
+    height: 200px; /* Reduce la altura del textarea */
+    font-size: 18px; /* Reduce el tamaño de la fuente */
+  }
+
+  .buttons {
+    bottom: 0px; /* Ajusta la posición */
+    gap: 8px; /* Reduce el espacio entre botones */
+    flex-direction: column; /* Coloca los botones en columna */
+    left: 0;
+    transform: none; /* Centra los botones */
+    align-items: center;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px; /* Ajusta el padding interno */
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
+  }
+
+  .output-box {
+    padding: 16px; /* Reduce el padding */
+    min-height: 200px; /* Ajusta la altura mínima */
+  }
+
+  .output-image {
+    max-width: 80%; /* Ajusta el tamaño máximo de la imagen */
+  }
+
+  .output-text {
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+  }
+
+  .copy {
+    width: 100%;
+    padding: 12px; /* Ajusta el tamaño del botón de copiar */
+    margin-top: 20px; /* Ajusta el margen superior */
+  }
 }
