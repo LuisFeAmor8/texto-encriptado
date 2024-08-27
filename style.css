@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F3F5FC;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  max-width: 1000px; /* Ajusta el ancho máximo del contenedor */
+  margin: 0 auto;
+  padding: 10px; /* Reduce el padding para que no haya tanto espacio alrededor */
+}
+
+header {
+  margin-bottom: 30px; /* Reduce el margen inferior */
+}
+
+.logo {
+  color: #0A3871;
+  font-size: 80px;
+  font-weight: bold;
+
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Cambia a proporciones iguales */
+  gap: 40px; /* Reduce el espacio entre secciones */
+  align-items: start;
+}
+
+.left-section {
+  flex: 100; /* Ajusta el tamaño de la sección izquierda */
+}
+
+.right-section {
+  margin-top: 0; /* Quita el margen superior */
+  display: flex;
+  flex-direction: column; /* Alinea verticalmente los elementos en la sección derecha */
+  gap: 24px;
+  justify-content: center;
+}
+
+textarea {
+  width: 100%;
+  height: 250px; /* Reduce la altura del textarea */
+  border: 2px solid #F3F5FC; /* Borde del textarea */
+  background-color: #F3F5FC; /* Cambia el fondo a blanco para mayor contraste */
+  font-size: 24px; /* Reduce el tamaño de la fuente */
+  color: #0A3871;
+  resize: none;
+  outline: none;
+  padding: 16px; /* Añade padding para que el texto no toque los bordes */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+textarea::placeholder {
+  color: #0A3871;
+}
+
+.buttons {
+  position: relative;
+  bottom: 100px; /* Ajusta la posición */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 16px; /* Reduce el espacio entre botones */
+}
+
+button {
+  width: 150px; /* Reduce el ancho de los botones */
+  padding: 16px; /* Reduce el padding interno */
+  border: 1px solid #0A3871;
+  border-radius: 24px;
+  font-size: 14px; /* Reduce el tamaño de la fuente */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.encrypt {
+  background-color: #0A3871;
+  color: white;
+}
+
+.decrypt {
+  background-color: #D8DFE8;
+  color: #0A3871;
+}
+
+.warning {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 1px;
+  color: #495057;
+
+}
+
+.output-box {
+  background-color: #ffffff;
+  border-radius: 32px;
+  padding: 22px; /* Reduce el padding */
+  box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  min-height: 328px; /* Reduce la altura mínima */
+}
+
+.output-image {
+  max-width: 60%; /* Reduce el tamaño máximo de la imagen */
+  margin-bottom: 10px; /* Reduce el margen inferior */
+}
+
+.output-text {
+  font-size: 20px; /* Reduce el tamaño de la fuente */
+  color: #495057;
+  margin-bottom: 10px; /* Reduce el margen inferior */
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.output-subtext {
+  font-size: 14px; /* Reduce el tamaño de la fuente */
+  color: #495057;
+}
+
+.copy {
+  width: 150px; /* Reduce el tamaño del botón de copiar */
+  padding: 16px; 
+  background-color: white; 
+  color: #0A3871; 
+  border: 2px solid #0A3871; 
+  border-radius: 24px; 
+  font-size: 14px; /* Reduce el tamaño de la fuente */
+  margin-top: 200px; /* Ajusta el margen superior */
+}
